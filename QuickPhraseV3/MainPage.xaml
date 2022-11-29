@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickPhraseV3.MainPage"
+             Title="Quick Phrase"
+             BackgroundImageSource="background.png">
+
+    <AbsoluteLayout>
+        
+        <BoxView 
+            Color="Black"
+            Opacity="0.5"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            AbsoluteLayout.LayoutFlags="SizeProportional" />
+
+        <Label
+            x:Name="PhraseLabel"
+            Text="Press Start!"
+            SemanticProperties.HeadingLevel="Level1"
+            FontFamily="QuickPhrase"
+            FontAttributes="Bold"
+            FontSize="48"
+            AbsoluteLayout.LayoutBounds="0.5, 0.5" 
+            AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Button
+            x:Name="NextButton"
+            Text="Start"
+            Clicked="OnNextClicked"
+            BackgroundColor="#DE4343"
+            TextColor="White"
+            FontFamily="QuickPhrase"
+            FontSize="32"
+            AbsoluteLayout.LayoutBounds="0.5, 0.9, 0.9, 0.15" 
+            AbsoluteLayout.LayoutFlags="All" />
+
+    </AbsoluteLayout>
+
+</ContentPage>
